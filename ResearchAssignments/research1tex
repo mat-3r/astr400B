@@ -1,0 +1,28 @@
+\documentclass{article}
+\usepackage{graphicx}  
+
+\title{ASTR 400B Research Assignment 1}
+\author{Maritza Torres}
+\date{February 2025}
+
+\begin{document}
+
+\maketitle
+
+\section{Research Project Topic}
+4. MW/M31 Dark Matter Halo Major Merger Remnant
+
+\subsection{Research Question}
+Density Profile of the Merged Dark Matter Remnant. What is the density profile of the combined MW + M31 halo? How does this compare to the original profile of each galaxy halo? How does this compare to a Hernquist profile or other dark matter profile (e.g. NFW, Isothermal Sphere)?
+
+\section{Conclusion}
+I am interested in Dark Matter and how it connects with the universe as a whole. So being able to do this research topic and question, would best align with my overall desire to go more in-depth with Dark Matter. I will be able to gain some experience of using actual data of Dark Matter while also bridging any gaps in my learning in coding/astronomy. 
+
+I plan to compare the original profile of each galaxy halo with the Hernquist profile. But depending on the complexity, I might use the NFW profile instead as it gives more accurate results for the structure formation in the universe.
+
+In order to explore the Density Profile of the Merged Dark Matter Remnant. I will need to compute the density profile of the merged MW/M31 dark matter halos before and after merging using N-body simulations that will model the gravitational interaction between the two galaxies. It will essentially  track the trajectories of a particular number of particles which will represent the substances that make up the Universe. (Dark Matter, Stars, Gas, ect.) From this we will be able to obtain an overall representation of the mass distribution at different time steps. 
+
+Overall, we will be able to expand our understanding of the Dark Matter halos and its  structural/dynamic evolution as a whole. Connecting the bridge on deepening our knowledge on galactic transformation processes but also the composition of Dark Matter. Bringing us one step closer to uncover the darkest mysteries of Dark Matter's true nature.
+\end{document}
+
+ 
