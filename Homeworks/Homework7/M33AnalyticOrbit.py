@@ -173,9 +173,9 @@ class M33AnalyticOrbit:
             #  advance the time by one timestep, dt
             t = t+dt # added to the time by one step
             #  store the new time in the first column of the ith row
-            orbit[i ] = t, *tuple(pos), *tuple(vel) # the time will be on the first column
+            pos,vel = self.LeapFrog(dt,pos,vel)  # implement the leapfrog integration for position and velocity 
+            orbit[i] = t, *tuple(pos), *tuple(vel) # the time will be on the first column
             #  advance the position and velocity using the LeapFrog scheme, LeapFrog returns a position vector and a velocity vector  
-            pos,vel = self.LeapFrog(dt,pos,vel )  # implement the leapfrog integration for position and velocity 
             # ****  store the new position vector into the columns with indexes 1,2,3 of the ith row of orbit,  where the syntax is row n, start at column 5 and end BEFORE column 8
             #orbit[i,1:4] = pos # will display the results for position in colums 3-5             
             #  store the new position vector into the columns with indexes 1,2,3 of the ith row of orbit
@@ -189,6 +189,7 @@ class M33AnalyticOrbit:
                    .format('t', 'x', 'y', 'z', 'vx', 'vy', 'vz')) # storing the file
         
         # there is no return function
+        
         
 # obtain data from file 
 # headers:  t, x, y, z, vx, vy, vz 
@@ -241,6 +242,14 @@ def MagDiff(G1,G2):
 RelPosM33M31 = MagDiff(pos3,pos2)
 VelM33M31 = MagDiff(vel3,vel2)
 #  M33AnalyticOrbit and m31
-PosM33  = MagDiff(pos4,pos2)
-VelM33 = MagDiff(vel4,vel2)
+#PosM33  = MagDiff(pos4,pos2)
+#VelM33 = MagDiff(vel4,vel2)
+#  the magnitude of the position and velocity
+PosM33  = np.sqrt((data4['x']**2) + (data4['y']**2)+(data4['z']**2))  
+VelM33 =  np.sqrt((data4['vx']**2)+(data4['vy']**2)+(data4['vz']**2))  
+# ensure the time is also the same length
+mint = min(len(time2),len(VelM33)) # error due to length so ensure they are the same length
+newt  = time2[:mint]  # arrays the same length for the time
+mint2 = min(len(time2),len(PosM33)) # error due to length so ensure they are the same length
+newt2 = time2[:mint2]  # arrays the same length for the time
 
