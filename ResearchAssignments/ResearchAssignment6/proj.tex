@@ -1,0 +1,177 @@
+
+\documentclass[fleqn,usenatbib]{mnras}
+
+\usepackage{newtxtext,newtxmath}
+
+\usepackage[T1]{fontenc}
+
+\DeclareRobustCommand{\VAN}[3]{#2}
+\let\VANthebibliography\thebibliography
+\def\thebibliography{\DeclareRobustCommand{\VAN}[3]{##3}\VANthebibliography}
+
+\usepackage{graphicx}	% Including figure files
+\usepackage{amsmath}	% Advanced maths commands
+
+
+\title {The Invisible Web of Reality: Decoding Dark Matter's Secrets Through Galactic Mergers}
+
+
+\author {Maritza Torres} 
+ 
+ 
+\date{April 29, 2025}
+
+ 
+\pubyear{\the\year{}}
+
+% Don't change these lines
+\begin{document}
+\label{firstpage}
+\pagerange{\pageref{firstpage}--\pageref{lastpage}}
+\maketitle
+
+
+\begin{keywords}
+Dark Matter Halo -- Cold Dark Matter Theory -- Hernquist Profile -- Major Merger -- Critical Density  
+\end{keywords} 
+
+\section{Introduction}
+
+ \textbf{Dark Matter Halos} form essentially the core gravitational foundation that dictates galaxy evolution through \textbf{Major Mergers} \citep{2019MNRAS.487..993D} A Major Merger is a collision between two galaxies where their compositions combine, triggering an intense transformation of their structure. Simulations of a major merger serves as a foundation for studying how the distribution of Dark Matter evolves, ultimately impacting galaxy evolution, stability, and structure formation. Dark Matter Halos are like the skeleton of galaxies, providing structural support and holding them together through gravity, even though they are invisible to the eye. Analyzing the density distribution of the merged halo will help determine the forces shaping galactic structures and their vital role in evolution. Focusing on comparing the merged halo’s density profile to theoretical models such as the Navarro-Frenk-White (NFW) and \textbf{Hernquist Profiles}, which are an analytic model used to compute the density distribution of Dark Matter, could open up a door into how Dark Matter dynamically behaves when such big events occur. While also providing crucial information about our understanding of galaxy collisions/mergers as a whole, further expanding our knowledge of these fundamental interactions. Overall, this study will provide crucial insights that may reshape our understanding of galaxy formation as a whole, but also help uncover one of the universe's darkest mysteries, the true nature of Dark Matter.
+ 
+Analyzing/comparing the density profile of the merged MW/M31 halo to the theoretical Dark Matter models will allow us to dig deeper into structure formation and evaluate whether it aligns with the CDM model (Cold Dark Matter). This examination could potentially expand our knowledge of Dark Matter’s properties by either supporting what we already know or unlocking an entirely new framework that has never been observed before. This analysis will determine whether the merger remnant is stable but also what the fate of the Local Group post collision is \citep{10.1111/j.1365-2966.2010.16912.x} Merging events are crucial as they hold valuable information which could essentially kill 6 birds with one stone. They provide insight about galaxy evolution, galactic structure, Dark Matter halos, mass redistribution, the fate of the merging system, and changes in star formation. \textbf{Galaxy evolution} refers to the process which a galaxy's structure, shape, and components evolve over time. This allows scientists to understand galaxy evolution on a whole new level, such as how the galaxies behave, reshape, and transform over time. As referred in \citep{Willman_2012}, a \textbf{galaxy} is a gravitationally bound collection of stars, Dark Matter, and gas/dust. The big collision between MW/M31 will fundamentally change their evolutionary paths, as their density distributions will be reconstructed due to the merging of their Dark Matter halos. This transformation is interconnected to their gravitational potential, which will ultimately influence its fate of the merged system. It is quite wonderful how the universe operates in intricate yet magnificent ways. When galaxies form they exist inside an invisible bubble/structure called a Dark Matter halo. This allows them to co-dependently evolve and interact with other galaxies to ultimately merge. As they interact, several elements influence how the galaxies grow, react with the other material, shape, and evolve over time \citep{Frenk_2012} Studying merged halos can assist in discovering the origins/history of the universe, as well as how everything came to be. All in all, it is important to obtain a deeper perception of the nature of the universe, as it will provide the fundamental nature of galaxy evolution. This research could lead to a new realization on galaxy evolution as a whole or simply serve as evidence.
+\begin{figure}
+    \centering
+    \includegraphics[width=0.3\textwidth]{drak.png}
+    \caption{This figure shows the density contours of the merged halo remnant from \cite{2019MNRAS.487..993D}. It compares different perspectives of the halo's shape after the major merger. The axes represent direction through the center of the halo while the distances are measured using the peak radius. The red dashed lines are the splashback radius, revealing how the inner halo remains the same while the outer regions endure changes.}
+    \label{Figure1:MW/M31 Halo}
+\end{figure}
+
+Dark Matter is pondered to be a mysterious substance that interacts uniquely through gravity and makes up most of the mass within the galaxies. Although the true nature of Dark Matter remains a mystery, our understanding of Dark Matter Halos have progressed over the years. We currently have an idea of the total amount of Dark Matter and its distribution in the universe. Dark Matter is invisible as it doesn't interact with light or matter. Current cosmological models such as the structure formation of the universe, \textbf{Cold Dark Matter Theory (CDM)} suggest that Dark Matter halos surround galaxies. These galaxies shape/evolve within the halos which contain elements that are collisionless. Numerical simulations and theoretical studies purpose that even after galaxy mergers, Dark Matter Halos follow a universal density profile know as the NFW profile \citep{2019MNRAS.487..993D} As shown in~\ref{Figure1:MW/M31 Halo} these studies back up the idea that the inner density region of the structure remains the same after major mergers. While the outer halo regions, such as the outermost region know as splash back radius are affected the most. This interaction causes the edge of the halo to be shifted outwards which effects how scientists measure the Dark Matter halos properties and overall structure. Drakos \& Taylor simulations suggest that the Einasto profile may more accurately represent how halos are after they merge. Moreover, this evolving understanding emphasizes that Dark Matter halos serve as fundamental building blocks in galaxy evolution as a whole, creating the gravitational foundation necessary for galaxy formation. Ultimately determining how galaxies rotate, evolve, and form while guiding us towards uncovering Dark Matter's true nature.
+
+There are numerous questions that remain unanswered regarding how Dark Matter halos are affected when galaxies merge together. So how do we precisely define and locate the outer edge to avoid miscalculations? If something is invisible, how can we ensure a  well rounded and consistent boundary measurement? Comparing the halo structures before and after merging is crucial to make a reasonable conclusion. Could the combination of galaxies introduce new structural components within the Dark Matter halo? Understanding the dynamics of Dark Matter particles is crucial, as it connects directly to uncovering Dark Matter's true nature. \cite{2019MNRAS.487..993D} attempted to answer these questions by applying numerical simulations to observe how the density distribution evolves during major mergers and then comparing them to analytic models. Altogether, comparing the density profiles of MW/M31 and conducting numerical simulation will put to rest these open questions, deepening our overall knowledge of galaxy mergers.
+\section{This Project}
+This project aims to investigate the density profile of the predicted collision between the Milky Way (MW) and Andromeda (M31), using N-body simulation data from snapshot 779 ($\sim 11.1$ Gyr) where the merged system structure can be evaluted after the merger. The merging Dark Matter Halos will come together to serve as a gravitational foundation for studying how the distribution of Dark Matter evolves, ultimately impacting galaxy evolution, stability, and structure formation. Merging halos are sort of like two oceans crashing into each other. While the waves change form due to the collision, the water continues flowing onward, revealing whether the core structure remains the same or forms new features. Comparing the overall structure initially and after the merger is vital for evaluating the impact of major mergers. The ultimate goal is to compute and compare the density profiles of the merged remnant with theoretical analytic models such as the Hernquist Profile and the Navarro-Frenk-White Profile, in order to evaluate how accurately these models describe the structure after merging. Additionally, this project will attempt to compute the Virial Radius and R200 - Critial radii which act as key boundaries used to calculate the size of the remnant halo, typically used when building cosmological simulations. All and all, this study's seeks to evaluate the effects of a Major Merger on the Dark Matter Halo and to determine whether the merger remnant fits within existing models.  
+
+There are three important questions for predicting the MW/M31 remnant and understanding its overall structure. First, what is the density profile of the combined MW/M31 halo after the merge occurs? Secondly, do the results align with predictions from the CDM model when compared to analytic models such as the Hernquist Profile and Navarro-Frenk-White Profile? Lastly, where is the definite boundary/radius of the merged Dark Matter Halo, and how exactly do these Dark Matter particles just combine? Do they blend smoothly like butter, or merge similar to how ice melts evenly into water? These open questions are addressed by comparing the final merged profile at snapshot $\sim 779$ to the individual initial profiles from snapshot 000 for both galaxies. This comparison allows for an in depth analysis of how the structure evolves after the merger. Moreover, comparing the results to theoretical models will support gaining a deeper intuition into the effects of major mergers, which could potentially unlock new boundaries for understanding Dark Matter as a whole. 
+
+Understanding the dynamics of Dark Matter particles is crucial, as it connects directly to uncovering Dark Matter's true nature. It is a fundamental piece for solving questions in galaxy evolution and obtaining a clearer picture of its overall behavior during major mergers. Dark Matter acts as the blood vessels in the body of the Universe, while galaxies are the organs. Like a human body, blood vessels keep the body alive/connected, Dark Matter keeps the Universe's structure alive and stable. It distributes gravity, connects galaxies, and influences where galaxies form and evolve. The merging of Dark Matter halos reforms their density structure, changes the gravitational framework, and redistributes the particles towards the outer boundaries. These changes have the potential to impact how galaxies behave and adjust over time, which helps address the open questions in galaxy evolution. By comparing the MW/M31 merged halos to their original profiles as well as with analytic models, we can ultimately analyze whether the current theoretical models accurately represent Dark Matter's behavior after such events. Calculating the edge boundaries will help determine whether the halos remain the same or blend smoothly during the merger. Significant changes in the density distribution could open endless possibilities, expanding our understanding of Dark Matter as a whole. Altogether, comparing the density profiles of MW/M31 and conducting numerical simulation will put to rest these open questions, deepening our overall knowledge of galaxy mergers.
+\section{Methodology}
+Analyzing the density structure of the Dark Matter halo remnant after the predicted collision between the Milky Way (MW) and Andromeda (M31). These N-body simulations were obtained from \citep{2012Van}, which models the anticipated merger between the two galaxies. An N-body simulation is a numerical method that computationally traces the gravitational interaction of thousands of particles over time in order to model the complex dynamical behavior of various systems. Each galaxy is initially modeled with three important components: Dark Matter halo, stellar disk, and a central bulge. The Dark Matter halo is initially modeled using a Hernquist model which is typically used to analytically explain how Dark Matter is distributed throughout the galaxies in Astronomy. These simulations as a whole give us the opportunity to observe how gravity interacts with the merger and ultimately forms a single remnant halo. The final merged structure is analyzed at snapshot $\sim 779$ and then compared to the initial galaxy DM halos at snapshot 000. This comparison provides an in depth picture of how exactly the merger reshapes the density distribution and boundaries of the Dark Matter halo. Therefore, researching major mergers amplifies our inner knowledge of galaxy evolution by evaluating the accuracy of existing theoretical models. 
+
+I intend to utilize methods from my previous assignments, labs and class resources as references to effectively approach answering the research question. Using the High Resolution N-body simulation data, I aim to analyze/construct how the Dark Matter halos of MW/M31 evolve both initially and post merger. Focusing only on Type 1 particles, which represents the Dark Matter component. The Dark halo is the essentially the origin of all the structures/components in the sky. I read and extract data from Snapshot 000, representing the original state of the individual halos and Snapshot 779, which represents the final remnant after the merger. The type 1 particles are used to create arrays for each system, which are then concatenated to form the combined merged halo. I will then compute the center of mass (COM) and calculate the radial distances of particles from this center. These distances are important as they are used to bin particles and ultimately construct the density profiles. These profiles will then allow me to analyze and compare the simulated results to theoretical models, such as NFW and Hernquist profiles, helping build a final conclusion on whether the theory fully aligns with the simulation or displays discrepancies. If time permits, I will also compute the outer boundary of the merged halo by calculating R200 and Virial radius, further exploring the halo's growth and evolution within cosmological models like CDM. Altogether, this approach will allow me to provide an in depth analysis of the data in order to solidify the conclusions. 
+\begin{figure}
+    \centering
+    \includegraphics[width=0.3\textwidth]{method.png}
+    \caption{This is a figure from \cite{2019MNRAS.487..993D} which illustrates the methodology intended to pursue to analyze the DM halo remnant after a major merger. The diagram shows the density profile and the circular velocity profile which are both plotted as a a function of radius. The remnant is then compared to the theoretical models such as NFW, Einasto, and scaled initial conditions. This comparison is intended to convey how accurate the analytic profiles match the simulated merger remnant.} 
+    \label{Figure2:Logic}
+\end{figure}
+
+The calculation computed by my code will first determine the Center of Mass (COM) of the merged Dark Matter distribution by using mass weighted average formula from Homework 4:
+\begin{equation}
+    x_{\text{COM}} = \frac{\sum m_i x_i}{\sum m_i}, \quad y_{\text{COM}} = \frac{\sum m_i y_i}{\sum m_i}, \quad z_{\text{COM}} = \frac{\sum m_i z_i}{\sum m_i}
+	\label{eq:weighted}
+\end{equation}
+where \(m_i\) is the mass of each particle, \(x_i,y_i,z_i\)  are the position components, and \(x_{\text{COM}}, y_{\text{COM}}, z_{\text{COM}}\) are the component of the COM vector.
+
+Next, the radial distance of each particle from the COM is computed:
+\begin{equation}
+    r = \sqrt{(x-x_{\text{COM}})^2+(y-y_{\text{COM}})^2+(z-z_{\text{COM}})^2}
+	\label{eq:radial}
+\end{equation}
+where r is the radial distance from a particle to COM (kpc), x,y,z are the position coordinates of the individual particle (kpc), and \(x_{\text{COM}}, y_{\text{COM}}, z_{\text{COM}}\) are the component of the COM vector (kpc).
+
+Then, the particles are binned using radial shells to compute the density (mass per volume):
+\begin{equation}
+    \rho(r) = \frac{\Delta M}{\Delta V}= \frac{\sum m_t}{\frac{4}{3}\pi(r^3_{out}-r^3_{in})}
+	\label{eq:bins}
+\end{equation}
+where \(\rho (r)\) is the density at the radius computed for each spherical shell, \(\Delta M)\) is the total mass of all the particles combined in the radial bin, \(\Delta V\) is the volume of the spherical shell between the outer/inner radii, \(m_t\) is the sum of each particle in that bin, \(r_{in}\), \(r_{out}\) is the inner/outer radii of the spherical bin (kpc), and lastly \(\frac 43 \pi (r^3_{out}-r^3_{in})\) is the volume of the shell.
+
+From this we can develop our two analytical models and then compare them to our N-body simulation:
+
+Hernquist Profile - (Hernquist 1990 ApJ 356):
+\begin{equation}
+    \rho(r) =  \frac{M_{halo}}{2\pi} \frac{a}{r(r+a)^3} \qquad  
+	\label{eq:herquist}
+\end{equation}
+where \(\rho(r)\) is the density distribution dependent on radius, r is the distance from the center (kpc), a is the radius length  of the mass density's movement (kpc), \(M_{halo}\) is the total mass of the halo (\(M_\odot\)) 
+
+Navarro-Frenk-White (NFW) - (The Astrophysical Journal, Volume 490, Issue 2, pp. 493-508.):
+\begin{equation}
+    \rho(r) =  \frac{\rho_0}{\left( \frac{r}{a2} \right)\left( 1 + \frac{r}{a2} \right)^2}  
+	\label{eq:NFW}
+\end{equation}
+where where \(\rho(r)\) is the density distribution dependent on radius, r is the distance from the center of the Dark Matter halo to the measuring density (kpc), a is the scale radius (kpc), \(\rho_{0}\) is the initial density (\(M_\odot\))
+
+Lastly, computing the outer edges of the halo to uncover the boundaries of the predicted merged Dark Matter remnant but also allowing the opportunity to explore the behavior of Dark Matter as a whole:
+R200 - radius where the average Dark Matter density is 200 times the \textbf{Critical Density} (\(\rho_crit\)) of the Universe. Critical Density is the average density needed for the Universe to be flat. WMAP determine this value to be \(9.9 \cdot 10^-30\) \(g/cm^3\)
+
+RVir - radius where the Dark Matter density is 360 times the mean Dark Matter density.
+
+Rvir > R200 - The viral radius is more than the R200.
+From this, you can calculate the splash back radius which is the outer boundary where particles reach the apocenter of their first orbit. Overall, these equations implemented in my code gives a direct path to easily compare the simulated Dark Matter halo with the theoretical models. Shedding light on the structure/behavior of the remnant after the two galaxies collide.
+
+For this project, there will be several plots I will need to compute in order to answer the research question and observe the impact major mergers have on the Dark Matter halo remnant. The first plot will show the density profiles of the two original galaxies using the simulation data from snapshot 000. I will then overlay the combed particles from Andromeda and the Milky Way at snapshot 779 onto the same plot. This comparison will alow me to observe how the original halos evolved into the merged remnant but also how the Dark Matter particles redistributed. This will give me a better sense of how particles behave during such an event and offer a closer look at galaxy evolution. Next, I will use theoretical analytic models such as the Hernquist and NFW profiles to evaluate how accurately they represent the simulation results. Overlaying these profiles will indicate if the theoretical models align with the merged halo or not. This comparison is ultimately important as it dictates how reliable these models are in computing post merger structure. Lastly, I will plot the outer boundary of the merged halo by computing the Virial radius and R200. These radii will bring me one step closer to determine the true edge of the halo and uncovering the true nature of Dark Matter. Overall, these individual plots will support my hypothesis and conclusions about the structural evolution of the halo and the reliability of analytic models in illustrating Dark Matter behavior during major mergers. 
+\begin{figure}
+    \centering
+    \includegraphics[width=0.5\textwidth]{logic.png}
+    \caption{This diagram outlines the steps to further explain the logic behind this study. It takes you through the whole process, from reading and getting the data to computing the outer edges of the merged Dark Matter halo. Each step is show in detail to provide a better understanding of the overall methodology.} 
+    \label{Figure2:methods}
+\end{figure}
+
+My hypothesis is that the density profile of the merged Dark Matter remnant will strictly follow the NFW profile, but with some minor changes. The center will be much more denser than the outer halo due to mass becoming concentrated at the core. As for the outer halo, it will expand outward as the particles redistribute. I expect the NFW profile to ultimately be a better fit than the Hernquist profile, as it is generally applied to cosmological halos. I also assume that the radius of the merged halo will be larger but well defined due to the increased combined mass from both the Milky Way and Andromeda halos. This hypothesis is motivated by the idea that when merging two systems it can naturally lead to discrepancies, similar to how mixing two substances can generate particles to redistribute or be lost. My assumption are solely based on past experiments/knowledge and established theoretical expectations. In conclusion, this hypothesis is supported by theoretical models and previous simulations. They concluded that while mergers change the outer density distribution, the final structure still follows the NFW model.
+
+\section{Results}
+The first plot reveals how Dark Matter behaves during major galactic mergers. The inner regions seems to be more effected by the merger while outer regions remains stable. The structure remains the same in the outer regions while the inner seem to be heavily effected by mass redistribution. At larger radii it remains it seems to hold its structure. The Hernquist profile/NFW aids in understanding how the structure of a Dark Matter halo evolves throughout the merger. They both show a similar structure but the hernquist seems to end quicker with a larger radii. But the NFW has a higher density- denser outer halo. Both profiles present qualitative knowledge on how Dark Matter is distributed when a major merger occurs. Unlocking the true nature of Dark Matter as a whole but also the overall structure of the Dark Matter halo remnant following a Major merger.
+\begin{figure}
+    \centering
+    \includegraphics[width=0.2\textwidth]{inital.png}
+    \caption{This plot shows the density vs radius of the original galaxy at snapshot 000 with the final merged halo. } 
+    \label{Figure4.5:j}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.2\textwidth]{final.png}
+    \caption{This a plot from Lab 7 which is the Dark Matter halo at snapshot 779. } 
+    \label{Figure4:k}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.2\textwidth]{start.png}
+    \caption{This a plot from Lab 7 which is the Dark Matter halo at snapshot 000. } 
+    \label{Figure3.5:k}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.2\textwidth]{theoretical.png}
+    \caption{This plot shows the density vs radius of the theoretical density profile: Hernquist and NFW with the merged simulation data.} 
+    \label{Figure3:mf}
+\end{figure}
+
+\section{Discussion}
+
+
+
+
+
+
+
+\begingroup 
+
+\nocite{*} 
+
+\bibliographystyle{mnras}
+
+\bibliography{references}
+\endgroup
+
+ 
+\bsp	% typesetting comment
+\label{lastpage}
+\end{document}
+
+ 
